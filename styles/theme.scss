@@ -1,0 +1,48 @@
+/* Color Palette */
+
+$color-charred-maroon-soot: #4b1529;
+$color-vintage-maroon: #90445e;
+$color-deep-sky-crayon: #1f9ebe;
+$color-deeper-ocean-blue: #005368;
+$color-cyan: #62dfff;
+$color-deep-sky-bue-crayon: #1f9ebe;
+$color-pale-sky-blue-crayon: #c6f4ff;
+$color-pale-cotton-pink: #e7c6d1;
+$color-plumeria: #aa576c;
+$color-black-deep-plum: #2d0012;
+$color-deep-plum: #6d2a3f;
+$color-raspberry-rising: #9f2e58;
+$color-bright-raspberry: #bc295f;
+$color-lime-green: #b0ea00;
+$color-bright-grass: #6b9430;
+$color-medium-grass: #4f731c;
+$color-burnt-grass: #38570c;
+$color-light-rose-red: #e6abbc;
+$color-dark-faded-rose: #774e55;
+$color-sunlit-dusty-rose: #8e555f;
+$color-pale-marshmallow-pink: #ffe8f1;
+$color-light-pink: #f8eeee;
+$color-light-blue: #2d8ba3;
+$padding-size: 1rem;
+
+/* Bootstrap Overrides */
+
+$input-border-radius: 0;
+$input-border-width: 0;
+$input-border-color: $color-charred-maroon-soot;
+$input-placeholder-color: #d195a5;
+$input-bg: $color-light-pink;
+$body-bg: $color-light-pink;
+
+$input-padding-x-sm: $padding-size;
+$input-color: $color-light-blue;
+
+.form-control {
+  border-bottom: solid 2px $input-border-color !important;
+}
+
+.form-label {
+  margin-left: $padding-size;
+  color: $color-pale-marshmallow-pink;
+  background-color: $color-charred-maroon-soot;
+}
