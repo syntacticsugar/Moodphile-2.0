@@ -13,6 +13,7 @@ $color-black-deep-plum: #2d0012;
 $color-deep-plum: #6d2a3f;
 $color-raspberry-rising: #9f2e58;
 $color-bright-raspberry: #bc295f;
+$color-another-plum: #841c42;
 $color-lime-green: #b0ea00;
 $color-bright-grass: #6b9430;
 $color-medium-grass: #4f731c;
@@ -23,22 +24,38 @@ $color-sunlit-dusty-rose: #8e555f;
 $color-pale-marshmallow-pink: #ffe8f1;
 $color-light-pink: #f8eeee;
 $color-light-blue: #2d8ba3;
+$color-lighter-pink: #f0dce0;
 $padding-size: 1rem;
 
 /* Bootstrap Overrides */
 
 $input-border-radius: 0;
+$input-border-radius-sm: 0;
 $input-border-width: 0;
 $input-border-color: $color-charred-maroon-soot;
 $input-placeholder-color: #d195a5;
-$input-bg: $color-light-pink;
+$input-bg: transparent;
 $body-bg: $color-light-pink;
 
 $input-padding-x-sm: $padding-size;
+$input-padding-y: 0;
 $input-color: $color-light-blue;
+
+$btn-border-radius: 0;
+$btn-border-radius-sm: 0;
+$btn-border-radius-lg: 0;
+
+$input-font-family: courier, "courier new", monospace;
+$font-family-base: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$primary: $color-raspberry-rising;
 
 .form-control {
   border-bottom: solid 2px $input-border-color !important;
+}
+
+.btn {
+  border-bottom: 3px solid $color-another-plum !important;
 }
 
 .form-label {
