@@ -4,9 +4,19 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Accordion from 'react-bootstrap/Accordion';
+import styles from '../styles/MoodSubmit.module.sass';
 
 const Moods: React.FC = () => {
   return (
+    <>
+    <Container>
+
+      <header>
+        <img className={styles.logo} src="https://raw.githubusercontent.com/syntacticsugar/moodphile-react/master/images/moodphile-logo-med.png" />
+      </header>
+
+    </Container>
+
     <Form>
       <Container>
         <Row>
@@ -25,24 +35,32 @@ const Moods: React.FC = () => {
             </Form.Group>
           </Col>
           <Col sm={6} md={4}>
-            <Form.Group>
+              <Form.Group>
               <Form.Control placeholder="Brooklyn, New York" />
               <Form.Label>CITY/STATE</Form.Label>
             </Form.Group>
           </Col>
         </Row>
+        <Row className={styles.moodButtons}>
+          <Col>
+            <Button className={styles.moodButton} variant="outline-primary">0</Button>
+            <Button className={styles.moodButton} variant="outline-primary">1</Button>
+            <Button className={styles.moodButton} variant="outline-primary">2</Button>
+            <Button className={styles.moodButton} variant="outline-primary">3</Button>
+            </Col>
+        </Row>
         <Row>
           <Col>
-            <Button variant="primary" size="lg">
+            <Button className={styles.moodSubmitButton} variant="primary" size="lg">
               GO
             </Button>
           </Col>
         </Row>
         <Row>
           <Col>
-            <Accordion style={{ 'background-color': '#f0dce0' }}>
+            <Accordion style={{ 'backgroundColor': '#f0dce0' }}>
               <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                MORE OPTIONS
+                ALSO...
               </Accordion.Toggle>
               <Accordion.Collapse eventKey="0">
                 <div>
@@ -81,6 +99,7 @@ const Moods: React.FC = () => {
         </Row>
       </Container>
     </Form>
+    </>
   );
 };
 

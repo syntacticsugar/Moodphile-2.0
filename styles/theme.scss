@@ -25,6 +25,7 @@ $color-pale-marshmallow-pink: #ffe8f1;
 $color-light-pink: #f8eeee;
 $color-light-blue: #2d8ba3;
 $color-lighter-pink: #f0dce0;
+$color-anemic-mustard: #ded540;
 $padding-size: 1rem;
 
 /* Bootstrap Overrides */
@@ -55,11 +56,14 @@ $primary: $color-raspberry-rising;
 }
 
 .btn {
+  /*  ultimately this should just be targeted for the submit 'GO' button
   border-bottom: 3px solid $color-another-plum !important;
+  */
 }
 
 .form-label {
   margin-left: $padding-size;
   color: $color-pale-marshmallow-pink;
   background-color: $color-charred-maroon-soot;
+  padding: 0 0.6em;
 }
